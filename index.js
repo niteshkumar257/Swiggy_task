@@ -2,10 +2,10 @@ const readline=require('readline');
 const Player=require('./player');
 const fight=require('./fight');
 
-const r1=readline.createInterface({
-    input:process.stdin,
-    output:process.stdout
-})
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
 let players=[];
 let playerId=1;

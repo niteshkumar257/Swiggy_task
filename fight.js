@@ -6,10 +6,10 @@ function fight(player1,player2)
     while(player1.health>0 && player2.health>0)
         {
             console.log(`\n${attacker.name} attacks ${defender.name}`);
-            const attackRoll=attacker.rollDie();
+            const attackRoll=attacker.rollDice();
             const attackDamage=attacker.calculateDamage(attackRoll);
 
-            const defenseRoll=defender.rollDie();
+            const defenseRoll=defender.rollDice();
             const defenseValue=defender.calculateDefense(defenseRoll);
 
             const damage=Math.max(0,attackDamage-defenseValue);
