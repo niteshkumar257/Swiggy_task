@@ -1,6 +1,6 @@
 const readline=require('readline');
-const Player=require('./player');
-const fight=require('./fight');
+const Player=require('./Player');
+const fight=require('./Fight');
 
 const rl = readline.createInterface({
     input: process.stdin,
